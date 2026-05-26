@@ -27,7 +27,7 @@ Why 4?
 Why 5?
 - Because reporting workflows evolved operationally over time without a dedicated internal tool focused on cross-channel visibility and consistency
 
-# Root cause identified 
+### Root cause identified 
 The core issue is not the lack of marketing data, but the lack of a centralized and standardized reporting system that transforms fragmented platform data into consistent, actionable insights.
 
 MarketLens is designed to solve this operational gap without requiring teams to replace their existing tools or workflows.
@@ -76,7 +76,19 @@ Example Metrics
 - CTR
 - CPC
 - Conversion Rate
-- ROAS 
+- ROAS
+
+## Wireframe - The idea of visualization
+
+The wireframe below represents the proposed V1 dashboard experience for MarketLens.
+
+The Design focuses on:
+- Unified cross-channel visibility
+- Simplified Reporting
+- Fast insight discovery
+- Operational efficiency for internal teams
+
+![MarketLens Wireframe](./wireframe_of_marketlens.jpeg )
 
 ## Out of Scope (v1)
 
