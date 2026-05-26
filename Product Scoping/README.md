@@ -19,13 +19,13 @@ Why 2?
 - Because campaign performance data is spread accross disconnected tools with different reporting formats.
 
 Why 3?
-Because there is no centralized system that standardizes and consolidates marketing data into a unified view. 
+- Because there is no centralized system that standardizes and consolidates marketing data into a unified view. 
 
 Why 4?
-Because teams only rely on platform-native dashboards and manual interpretation rather than a shared reporting layer
+- Because teams only rely on platform-native dashboards and manual interpretation rather than a shared reporting layer
 
 Why 5?
-Because reporting workflows evolved operationally over time without a dedicated internal tool focused on cross-channel visibility and consistency
+- Because reporting workflows evolved operationally over time without a dedicated internal tool focused on cross-channel visibility and consistency
 
 # Root cause identified 
 The core issue is not the lack of marketing data, but the lack of a centralized and standardized reporting system that transforms fragmented platform data into consistent, actionable insights.
