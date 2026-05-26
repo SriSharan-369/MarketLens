@@ -3,12 +3,34 @@
 ## Product Description
 MarketLens is an internal marketing insights platform that helps teams quickly understand marketing performance across channels by bringing campaign data and insights into one simple view.
 
-## Problem Statememt 
+## Problem Statement 
 Marketing performance data is currently spread across multiple platforms, requiring analysts to manually collect metrics, compare reports, and prepare updates for internal teams and clients.
 
 This process is time-consuming, inconsistent, and dependent on individual team members. Different analysts may interpret data differently, making it difficult to maintain a consistent understanding of campaign performance across brands and channels
 
 Teams need a faster and more reliable way to understand marketing performance without changing the tools they already use.
+
+## Why's - The birth of MarketLens 
+
+Why 1? 
+- Because analysts manually collect data from multiple marketing platform
+
+Why 2?
+- Because campaign performance data is spread accross disconnected tools with different reporting formats.
+
+Why 3?
+Because there is no centralized system that standardizes and consolidates marketing data into a unified view. 
+
+Why 4?
+Because teams only rely on platform-native dashboards and manual interpretation rather than a shared reporting layer
+
+Why 5?
+Because reporting workflows evolved operationally over time without a dedicated internal tool focused on cross-channel visibility and consistency
+
+# Root cause identified 
+The core issue is not the lack of marketing data, but the lack of a centralized and standardized reporting system that transforms fragmented platform data into consistent, actionable insights.
+
+MarketLens is designed to solve this operational gap without requiring teams to replace their existing tools or workflows.
 
 ## Primary Users
 
@@ -16,12 +38,12 @@ The primary users of MarketLens are internal marketing analysts and account mana
 
 Secondary users may include leadership teams and clients who need a simplified view of marketing performance.
 
-The first version of the platform is primarly focused on internal teams, as improving internal reporting efficiency creates the highest immediate value.
+The first version of the platform is primarily focused on internal teams, as improving internal reporting efficiency creates the highest immediate value.
 
 ## Goals of the Tool
 
 MarketLens is designed to 
-- Reduce manual reporting effect
+- Reduce manual reporting effort
 - Provide a unified view of marketing performance
 - Standardize how campaign insights are presented
 - Help teams quickly identify where attention is needed
@@ -69,7 +91,7 @@ the following features are intentionally excluded from the first version:
 
 These features add significant complexity without directly solving the primary reporting consistency problem
 
-## Data Scorces 
+## Data Sources 
 
 MarketLens integrates with existing marketing platforms without changing the current workflow.
 
