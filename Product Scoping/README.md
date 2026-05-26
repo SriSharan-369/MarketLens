@@ -49,7 +49,7 @@ MarketLens is designed to
 - Help teams quickly identify where attention is needed
 - Reduce dependency on specific individuals for reporting 
 
-## Proposed Solution
+## Proposed Solution 
 
 MarketLens acts as a centralized intelligence layer on top of existing marketing platforms. 
 
@@ -57,7 +57,7 @@ The platform collects campaign data from multiple sources such as Google Ads, Me
 
 Instead of manually stitching together reports from different platforms, teams can use MarketLens to quickly understand campaign performance and identify key trends or issues.
 
-## V1 Scope 
+## V1 Scope - The embryo version of MarketLens
 
 The first version of MarketLens focuses on solving the core reporting and visibility problem.
 
@@ -88,7 +88,7 @@ The Design focuses on:
 - Fast insight discovery
 - Operational efficiency for internal teams
 
-![MarketLens Wireframe](./wireframe_of_marketlens.jpeg )
+![MarketLens Wireframe](./wireframe_of_marketlens.jpeg)
 
 ## Out of Scope (v1)
 
@@ -114,7 +114,7 @@ Potential data sources include:
 - Google Analytics
 - CSV uploads for unsupported platforms
 
-## High-Level Architecture
+## High-Level Architecture - Skeleton of MarketLens 
 
 ```
 Marketing Platforms
@@ -137,3 +137,25 @@ Internal Teams / Clients
 - MarketLens generates unified performance summaries and insights.
 - Internal teams review campaign performance in a single dashboard.
 - Temas use these insights to prepare faster and more consistent client updates.
+
+
+## Trust & Reliability - The Soul of MarketLens 
+
+To ensure users trust the platform, MarketLens includes:
+- Source-level data tracebility
+- Timestamped data refreshes
+- Standardized metric definitions
+- Error handling for failed integrations
+- Consistent reporting logic across channels
+
+## Future Improvements 
+With additional time, future versions of MarketLens could include:
+- AI-Powered insight explainations
+- Forecasting and anamoly detection
+- Role-Based access control
+- Client-facing dashboards
+- Slack or email alert integrations
+
+
+
+ 
