@@ -5,7 +5,7 @@ positive_words=["growth","innovation","success","increase"]
 
 negative_words=["decline","loss","crisis","failure"]
 
-def get_sentiment(text):
+def get_sentiment(title):
     title = str(title).lower()
     positive_score= sum(word in title for word in positive_words)
     negative_score= sum(word in title for word in negative_words)
@@ -16,7 +16,7 @@ def get_sentiment(text):
     else:
         return "Neutral"
 
-def transform_data(articles):
+def transform_articles(articles):
     transformed_data = []
     for article in articles:
         title = article.get("title")

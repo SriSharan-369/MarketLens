@@ -1,0 +1,6 @@
+2026-05-28 10:16:03,079 - INFO - Starting news extraction
+2026-05-28 10:16:03,812 - ERROR - API error: 400 Client Error: Bad Request for url: https://newsapi.org/v2/everything?apiKey=8e4036cb73a44820a118bfcb6c03bf0e
+2026-05-28 10:21:11,072 - INFO - Starting news extraction
+2026-05-28 10:21:11,922 - INFO - Fetched 95 articles
+2026-05-28 10:24:16,075 - INFO - Starting news extraction
+2026-05-28 10:24:16,770 - INFO - Fetched 95 articles

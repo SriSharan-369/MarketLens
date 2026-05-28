@@ -1,6 +1,9 @@
 import requests
-import logging 
+import logging
+import os
 from config import *
+
+os.makedirs("logs", exist_ok=True)
 
 logging.basicConfig(
     filename="logs/pipeline.log",
@@ -10,8 +13,12 @@ logging.basicConfig(
 
 def fetch_news():
     logging.info("Starting news extraction")
+    params ={
+        "q": "marketing",
+        "apikey": NEWS_API_KEY
+    }
     try:
-        response = requests.get(BASE_URL, params={"apiKey": NEWS_API_KEY},timeout=10)
+        response = requests.get(BASE_URL, params=params, timeout=10)
         response.raise_for_status()
         data = response.json()
 
