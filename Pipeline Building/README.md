@@ -186,5 +186,28 @@ title_length	INTEGER
 sentiment_bucket	STRING
 ingestion_time	TIMESTAMP
 ```
+## 10. Sample SQL Query
+
+```
+SELECT
+    source_name,
+    sentiment_bucket,
+    COUNT(*) AS total_articles
+FROM `your_project.marketlens_demo.news_articles`
+GROUP BY source_name, sentiment_bucket
+ORDER BY total_articles DESC;
+```
+
+This query shows which news sources publish the most positive, negative, or neutral marketing-related articles.
+
+## 11. Logging and Error Handling 
+
+The pipeline includes:
+
+- API exception handling
+- HTTP error handling
+- Logging to logs/pipeline.log
+- Graceful failure handling for invalid responses
+
 
 
