@@ -18,18 +18,18 @@ MarketLens is an internal marketing insights platform that helps teams quickly u
 
 ### Task 1 – Product Scoping
 Focused on defining:
-- the product vision
-- user problems
+- The product vision
+- User problems
 - MVP scope
-- architecture
-- workflows
-- wireframes
-- product tradeoffs
+- Architecture
+- Workflows
+- Wireframes
+- Product tradeoffs
 
 ### Task 2 – Data Pipeline Building
 Focused on:
-- extracting data from a public API
-- transforming and cleaning data
-- loading data into BigQuery
-- querying insights using SQL
-- production scaling considerations
+- Extracting data from a public API
+- Transforming and cleaning data
+- Loading data into BigQuery
+- Querying insights using SQL
+- Production scaling considerations
