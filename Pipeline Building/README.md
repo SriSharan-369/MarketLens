@@ -25,7 +25,9 @@ SQL Insights Query
 
 ### Architecture Diagram 
 
-'./MarketLens PipeLine.jpeg'
+<p align="left">
+  <img src="./MarketLens PipeLine.jpeg">
+</p>
 
 ### Data pipeline Architecture 
 ```
