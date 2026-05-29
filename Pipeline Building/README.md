@@ -23,6 +23,11 @@ SQL Insights Query
 ```
 ## Architecture 
 
+### Architecture Diagram 
+
+'./MarketLens PipeLine.jpeg'
+
+### Data pipeline Architecture 
 ```
 ┌─────────────┐     ┌──────────────┐     ┌───────────────────────┐
 │  NewsAPI    │────▶│  extract.py  │────▶│    transform.py       │
