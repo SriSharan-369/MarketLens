@@ -73,10 +73,10 @@ Included in V1
 Example Metrics
 - Spend
 - Impressions
-- CTR
-- CPC
+- CTR : Click Through Rate 
+- Cost Per CLick
 - Conversion Rate
-- ROAS
+- ROAS : Return on Ad Spend 
 
 ## Wireframe 
 
