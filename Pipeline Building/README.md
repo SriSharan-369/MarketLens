@@ -209,5 +209,164 @@ The pipeline includes:
 - Logging to logs/pipeline.log
 - Graceful failure handling for invalid responses
 
+## How you would run in this in Production 
+
+1. How would you schedule this pipeline to run automatically?
+
+Currently, the pipeline is executed manually using:
+```
+python pipeline_building/main.py
+```
+In a real production environment, manual execution is not practical because data pipelines usually need to run repeatedly and reliably without human intervention.
+
+To automate execution, the pipeline can be scheduled using orchestration or scheduling tools such as:
+```
+Apache Airflow
+Google Cloud Composer
+Cron Jobs (Linux)
+Windows Task Scheduler
+```
+Example :
+
+If the business wants fresh marketing news every morning, the scheduler could run the pipeline automatically every day at 8 AM.
+The scheduler will simply trigger:
+```
+python pipeline-building/main.py
+```
+at the configured interval.
+
+Why scheduling matters ?
+
+Automation provides several operational benefits:
+
+- Removes manual effort
+- Ensures consistent data updates
+- Reduces human error
+- Makes reporting and analytics more reliable
+- Enables pipelines to run continuously in production
+
+Why Airflow is commonly used ?
+
+Apache Airflow is widely used in data engineering because it provides:
+
+- Workflow orchestration
+- Dependency management
+- Retry handling
+- Monitoring dashboards
+- Scheduling support
+- Failure notifications
+
+In a larger system, Airflow would manage this ETL pipeline as a DAG (Directed Acyclic Graph).
+
+## How would you know if it failed?
+
+Failures are captured using Python logging and exception handling.
+
+1. Alerting
+
+Automatic notifications can be sent through:
+
+- Email
+- Slack
+- Microsoft Teams
+
+Example: “MarketLens pipeline failed at 08:00 AM during BigQuery load stage.”
+This helps engineers respond quickly.
+
+2. Retry Mechanisms
+
+Temporary failures such as network timeouts should not immediately fail the entire pipeline.
+
+Retries can be added for:
+
+- API requests
+- BigQuery operations
+
+This improves reliability.
+
+3. Logging
+
+Instead of local log files, logs can be sent to platforms such as:
+
+- Google Cloud Logging
+- ELK Stack
+- Datadog
+
+This makes debugging easier in distributed systems.
+
+4. Data Quality Validation
+
+The pipeline should also validate the data itself.
+
+Examples:
+- Check if row count suddenly drops
+- Validate null percentages
+- Detect duplicate articles
+- Ensure timestamps are valid
+
+This helps detect silent data issues even when the pipeline technically succeeds.
+
+## What would you add or change if this pipeline needed to scale to 10x the data volume?
+
+The current implementation works well for small-to-medium datasets, but larger data volumes will require architectural improvements.
+
+Improvements for Large-Scale Processing
+1. Replace Pandas with Apache Spark
+
+Pandas loads everything into memory on one machine.
+
+For large-scale workloads, Apache Spark will be better because it supports:
+
+- distributed processing
+- parallel execution
+- cluster-based computation
+
+This allows the pipeline to process significantly larger datasets efficiently.
+
+2. Incremental Ingestion
+
+Currently, every run fetches the latest articles again.
+At large scale, repeatedly processing old data wastes resources.
+A better design is to track the latest processed timestamp and ingest only new articles
+
+Benefits:
+
+- faster pipeline execution
+- reduced API calls
+- lower storage costs
+  
+3. BigQuery Partitioned Tables
+
+Large tables become slower and more expensive to query.
+Partitioning the table by "published_at" will improve query performance, storage efficiency, cost optimization
+
+Example:
+Queries for one specific day would scan only that partition instead of the entire table.
+
+4. Deduplication Logic
+
+News APIs often return repeated articles.At larger scale, duplicates become a major issue.
+
+The pipeline can implement:
+```
+df.drop_duplicates(subset=["title"])
+```
+or deduplicate using article URLs or hashes.
+
+This improves data quality and reduces unnecessary storage.
+
+5. Workflow Orchestration with Airflow
+
+As pipelines grow, multiple stages and dependencies appear.
+
+Airflow will help to manage:
+
+- scheduling
+- retries
+- monitoring
+- dependency execution
+- pipeline visibility
+
+This is a standard practice in modern data engineering.
 
 
