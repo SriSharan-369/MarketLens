@@ -10,7 +10,7 @@ This process is time-consuming, inconsistent, and dependent on individual team m
 
 Teams need a faster and more reliable way to understand marketing performance without changing the tools they already use.
 
-## Why's - The birth of MarketLens 
+## Why MarketLens ?
 
 Why 1? 
 - Because analysts manually collect data from multiple marketing platform
@@ -57,7 +57,7 @@ The platform collects campaign data from multiple sources such as Google Ads, Me
 
 Instead of manually stitching together reports from different platforms, teams can use MarketLens to quickly understand campaign performance and identify key trends or issues.
 
-## V1 Scope - The embryo version of MarketLens
+## V1 Scope 
 
 The first version of MarketLens focuses on solving the core reporting and visibility problem.
 
@@ -78,7 +78,7 @@ Example Metrics
 - Conversion Rate
 - ROAS
 
-## Wireframe - The idea of visualization
+## Wireframe 
 
 The wireframe below represents the proposed V1 dashboard experience for MarketLens.
 
@@ -114,7 +114,7 @@ Potential data sources include:
 - Google Analytics
 - CSV uploads for unsupported platforms
 
-## High-Level Architecture - Skeleton of MarketLens 
+## High-Level Architecture 
 
 ```
 Marketing Platforms
@@ -139,7 +139,7 @@ Internal Teams / Clients
 - Temas use these insights to prepare faster and more consistent client updates.
 
 
-## Trust & Reliability - The Soul of MarketLens 
+## Trust & Reliability 
 
 To ensure users trust the platform, MarketLens includes:
 - Source-level data tracebility
