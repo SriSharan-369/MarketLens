@@ -76,7 +76,7 @@ Example Metrics
 - CTR : Click Through Rate 
 - Cost Per CLick
 - Conversion Rate
-- ROAS : Return on Ad Spend 
+- ROAS : Return on Ad Spend
 
 ## Wireframe 
 
@@ -102,6 +102,25 @@ the following features are intentionally excluded from the first version:
 - Conversational AI assistants
 
 These features add significant complexity without directly solving the primary reporting consistency problem
+
+## Reason behind scope decisions 
+
+The V1 scope was intentionally designed around the concept of a Minimum Viable Product (MVP).
+
+The goal of an MVP is to:
+- solve the most important user problem first
+- deliver value quickly
+- validate adoption before scaling complexity
+
+By limiting the first version to core reporting and automation capabilities, MarketLens can:
+
+- reduce development time
+- lower operational complexity
+- gather user feedback early
+- validate product-market fit
+
+before investing in more advanced analytics and AI-driven functionality.
+
 
 ## Data Sources 
 
